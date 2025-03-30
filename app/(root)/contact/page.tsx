@@ -6,7 +6,7 @@ function page() {
     <div className="text-center font-bold text-4xl text-gray-800 py-12 uppercase">Get In Touch</div>
 
     <div className="text-center mb-16">
-        <div className="text-lg text-gray-600">Let's Start a Conversation</div>
+        <div className="text-lg text-gray-600">Let&apos;s Start a Conversation</div>
         <div className="text-base text-gray-500 mt-4">
             Feel free to drop an email. Old-Fashioned phone calls work too.
         </div>
