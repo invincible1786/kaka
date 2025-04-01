@@ -3,18 +3,26 @@ import React from 'react'
 const layout = ( {children} : { children: React.ReactNode}) => {
   return (
     <div className="cursor-grab">
-    <div className=" navbar flex justify-end py-4 px-8">
-    <div className="flex">
-        <ul className="flex space-x-20 mt-5 mr-10">
-            <li className="hover:text-blue-500 cursor-pointer">Home</li>
-            <li className="hover:text-blue-500 cursor-pointer">Products</li>
-            <li className="hover:text-blue-500 cursor-pointer">Contact Us</li>
-        </ul>
-    </div>
+    <div className="cursor-grab">
+    <div className="navbar flex justify-between py-4 px-8">
+        <div className="flex items-center">
 
+            <img src="/WhatsApp Image 2025-04-01 at 16.03.32_454a8442.jpg" alt="Logo" className="h-15 w-30 rounded-2l invert mr-5" />
+        </div>
+        
+        <div className="flex">
+            <ul className="flex space-x-20 mt-5 mr-10">
+                <li className="hover:text-blue-500 cursor-pointer">Home</li>
+                <li className="hover:text-blue-500 cursor-pointer">Products</li>
+                <li className="hover:text-blue-500 cursor-pointer">Contact Us</li>
+            </ul>
+        </div>
     </div>
+</div>
+
+    <div className="bg-white">
     {children}
-
+    </div>
     <div className="footer bg-gray-800 text-white py-10 ">
   <div className="container mx-auto px-20 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
     <div className="left space-y-4">
