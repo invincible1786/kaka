@@ -1,6 +1,6 @@
 import React from 'react';
 
-const ProductCard = ({ image, name, description }) => {
+const ProductCard = ({ image="d", name="d", description="d" }) => {
   return (
     <div className="w-90 bg-white rounded-2xl shadow-lg overflow-hidden transform transition duration-300 hover:scale-105 hover:shadow-2xl hover:translate-z-2">
       <div className="relative">
