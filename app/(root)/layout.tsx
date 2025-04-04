@@ -12,8 +12,8 @@ const layout = ( {children} : { children: React.ReactNode}) => {
         </div>
         
         <div className="flex">
-            <ul className="flex space-x-20 mt-5 mr-10">
-            <Link href="/home"><li className="hover:text-blue-500">Home</li> </Link>
+            <ul className="flex space-x-20 mt-5 mr-10 font-bold">
+            <Link href="/"><li className="hover:text-blue-500">Home</li> </Link>
             <Link href="/products"><li className="hover:text-blue-500">Products</li></Link>
             <Link href="/contact"><li className="hover:text-blue-500">Contact Us</li></Link>
             </ul>
@@ -36,7 +36,7 @@ const layout = ( {children} : { children: React.ReactNode}) => {
     <div className="mid space-y-4">
       <p className="text-lg font-semibold">Quick Links</p>
       <ul className="space-y-2">
-      <Link href="/home"><li className="text-sm hover:underline mt-5">Home</li></Link>
+      <Link href="/"><li className="text-sm hover:underline mt-5">Home</li></Link>
       <Link href="/products"><li className="text-sm hover:underline mt-5">Products</li></Link>
       <Link href="/contact"><li className="text-sm hover:underline mt-5">Contact Us</li></Link>
       </ul>
@@ -45,11 +45,11 @@ const layout = ( {children} : { children: React.ReactNode}) => {
     <div className="right space-y-4">
       <p className="text-lg font-semibold">Our Services</p>
       <ul className="space-y-2">
-        <li className="text-sm hover:underline cursor-pointer">services</li>
-        <li className="text-sm hover:underline cursor-pointer">services</li>
-        <li className="text-sm hover:underline cursor-pointer">services</li>
-        <li className="text-sm hover:underline cursor-pointer">services</li>
-        <li className="text-sm hover:underline cursor-pointer">services</li>
+        <li className="text-sm hover:underline cursor-pointer">Custom Manufacturing Solution</li>
+        <li className="text-sm hover:underline cursor-pointer">Quality Control and Testing</li>
+        <li className="text-sm hover:underline cursor-pointer">Eco Friendly Manufacturing Processes</li>
+        <li className="text-sm hover:underline cursor-pointer">Precision Engineering</li>
+        <li className="text-sm hover:underline cursor-pointer">Product Development</li>
       </ul>
     </div>
   </div>

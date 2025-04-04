@@ -32,7 +32,7 @@ const Page = () => {
 
   return (
     <>
-      <div className="text-4xl font-extrabold text-black text-center my-10 p-6 rounded-2xl shadow-lg tracking-wide uppercase">
+      <div className="text-4xl font-extrabold text-black text-center p-6 rounded-2xl shadow-lg tracking-wide uppercase">
   Here are the Products produced at our esteemed unit  
 </div>
 
