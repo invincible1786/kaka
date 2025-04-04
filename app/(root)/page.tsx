@@ -4,7 +4,7 @@ import Image from 'next/image'
 
 const page = () => {
 
-   const Card = ({ text }) => {
+   const Card = ({ text = "Default Text" }) => {
     return (
       
       <div className="card bg-cover bg-center h-48 w-72 relative rounded-3xl overflow-hidden shadow-lg transform transition-transform hover:scale-105">
