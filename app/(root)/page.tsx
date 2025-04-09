@@ -4,49 +4,6 @@ import Carousel from '../components/carousel';
 
 const page = () => {
 
-  const Industries = [
-    
-    {
-        img: '/p2.jpg',
-        name: 'Print Media and Paper'
-    },
-    {
-        img: '/p2.jpg',
-        name: 'Print Media and Paper'
-    },
-    {
-        img: '/p2.jpg',
-        name: 'Print Media and Paper'
-    },
-    {
-        img: '/p2.jpg',
-        name: 'Print Media and Paper'
-    },
-    {
-        img: '/p2.jpg',
-        name: 'Print Media and Paper'
-    },
-    {
-        img: '/p2.jpg',
-        name: 'Print Media and Paper'
-    },
-    {
-        img: '/p2.jpg',
-        name: 'Print Media and Paper'
-    }
-];
-
-   const Card = ({ text = "Default Text" }) => {
-    return (
-      
-      <div className="card bg-cover bg-center h-48 w-72 relative rounded-3xl overflow-hidden shadow-lg transform transition-transform hover:scale-105">
-      <div className="text absolute inset-0 flex justify-center items-center bg-black bg-opacity-50 text-white text-xl font-semibold p-4">
-        {text}
-      </div>
-    </div>
-    );
-  };
-
   return (
     <div className="container">
       <div className="cover relative w-full">
@@ -117,10 +74,6 @@ const page = () => {
 
       <div className="locations text-center py-8">
     <h2 className="text-3xl font-bold text-gray-900 tracking-wide uppercase">Locations We Cater To</h2>
-
-      <main className="flex items-center justify-center h-screen">
-        <Carousel />
-      </main>
       </div>
     </div>
     </div>

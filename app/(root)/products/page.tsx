@@ -1,10 +1,17 @@
 import React from 'react';
+import Image from 'next/image';
 
 const ProductCard = ({ image = "d", name = "d", description = "d" }) => {
   return (
     <div className="w-full bg-white rounded-2xl shadow-lg overflow-hidden transform transition duration-300 hover:scale-105 hover:shadow-2xl">
-      <div className="relative">
-        <img src={image} alt={name} className="w-full h-60 sm:h-72 lg:h-80 object-cover" />
+      <div className="relative h-60 sm:h-72 lg:h-80">
+        <Image 
+          src={image} 
+          alt={name} 
+          fill
+          className="object-cover"
+          sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 25vw"
+        />
       </div>
       <div className="p-4">
         <h3 className="text-lg sm:text-xl font-semibold text-gray-900 text-center">{name}</h3>
