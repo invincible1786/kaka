@@ -7,18 +7,18 @@ const layout = ({ children }: { children: React.ReactNode }) => {
     <div className="overflow-x-hidden">
       <div className="fixed top-0 left-0 right-0 bg-black z-50 shadow-md">
         <div className="navbar flex items-center justify-between py-2 px-3 md:px-8">
-          <div className="flex items-center">
+          <div className="flex items-center mt-2">
             <Image 
               src="/WhatsApp Image 2025-04-01 at 16.03.32_454a8442.jpg" 
               alt="Logo" 
               width={100}
               height={50}
-              className="min-w-[100px] rounded-2l invert mr-10 mt-5" 
+              className="min-w-[100px] rounded-2l invert mr-10 " 
             />
           </div>
           
           <div className="flex items-center">
-            <ul className="flex items-center space-x-8 md:space-x-20 mr-4 md:mr-10 font-bold text-white text-sm sm:text-base lg:text-lg xl:text-l">
+            <ul className="flex items-center space-x-8 md:space-x-20 mr-4 md:mr-10 font-bold text-white text-sm sm:text-base lg:text-lg xl:text-l mt-3">
               <Link href="/"><li className="hover:text-blue-500">Home</li></Link>
               <Link href="/products"><li className="hover:text-blue-500">Products</li></Link>
               <Link href="/contact"><li className="hover:text-blue-500 ">Contact</li></Link>

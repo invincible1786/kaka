@@ -22,7 +22,7 @@ const page = () => {
                             <li className="flex justify-center transition-transform duration-300 ease-in-out transform hover:scale-105 bg-blue-900 text-white p-3 sm:p-4 rounded-lg shadow-md">
                                 <p className="text-base sm:text-xl lg:text-2xl break-words">Email: kakar.fabricators@gmail.com</p>
                             </li>
-                            <li className="flex justify-center transition-transform duration-300 ease-in-out transform hover:scale-105 bg-blue-900 text-white p-3 sm:p-4 rounded-lg shadow-md">
+                            <li className="flex justify-center transition-transform duration-300 ease-in-out transform hover:scale-105 bg-gray-400 text-white p-3 sm:p-4 rounded-lg shadow-md">
                                 <p className="text-base sm:text-xl lg:text-2xl break-words">Location: 123 Main St, City, Country</p>
                             </li>
                         </ul>
