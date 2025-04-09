@@ -1,6 +1,6 @@
 import React from 'react'
 import Image from 'next/image'
-import Carousel from '../components/carousel';
+
 
 const page = () => {
 

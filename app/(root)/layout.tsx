@@ -1,5 +1,6 @@
 import React from 'react'
 import Link from 'next/link';
+import Image from 'next/image';
 
 const layout = ({ children }: { children: React.ReactNode }) => {
   return (
@@ -7,10 +8,12 @@ const layout = ({ children }: { children: React.ReactNode }) => {
       <div className="fixed top-0 left-0 right-0 bg-black z-50 shadow-md">
         <div className="navbar flex items-center justify-between py-2 px-3 md:px-8">
           <div className="flex items-center">
-            <img 
+            <Image 
               src="/WhatsApp Image 2025-04-01 at 16.03.32_454a8442.jpg" 
               alt="Logo" 
-              className="h-[50px] w-[100px] min-w-[100px] rounded-2l invert mr-10 mt-5" 
+              width={100}
+              height={50}
+              className="min-w-[100px] rounded-2l invert mr-10 mt-5" 
             />
           </div>
           
