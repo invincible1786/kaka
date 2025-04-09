@@ -27,9 +27,9 @@ const page = () => {
   </div>
 </div>
 
-      <div className="abt max-w-2xl mx-auto p-6 mt-20 mb-10">
-        <h2 className="text-5xl font-semibold text-center text-gray-800 mb-4">About Us</h2>
-        <p className="text-2xl text-black leading-relaxed text-center">
+      <div className="abt max-w-2xl mx-auto p-6 mt-20 mb-10 ">
+        <h2 className="text-3xl sm:text-4xl md:text-5xl font-semibold text-center text-gray-800 mb-4">About Us</h2>
+        <p className="text-lg sm:text-xl md:text-2xl text-black leading-relaxed text-center">
         At Kakar Fabricators, we forge excellence through unwavering commitment to hard work, superior quality, innovative solutions, and punctual delivery on every project.
         </p>
       </div>
@@ -38,7 +38,10 @@ const page = () => {
     <p className="font-bold  text-black text-xl text-white">Established In - 1999</p>
 </div>
 
-      <div className="founders px-6 py-15 bg-white">
+      <div className="founders px-6 py-8 bg-white">
+        <div className="text-center mb-8">
+          <h3 className="text-4xl font-bold text-gray-900 tracking-wide uppercase">Founders</h3>
+        </div>
   <div className="mt-1 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 ">
     {[
       { src: "/FO2.jpg", name: "Shri Malak Natha Ram Kakar" },
@@ -49,7 +52,7 @@ const page = () => {
       key={index}
       className="relative flex flex-col items-center text-center transform transition duration-300 bg-white rounded-2xl overflow-hidden"
     >
-      <div className="w-full h-150 overflow-hidden rounded-2xl">
+      <div className="w-full h-100 overflow-hidden rounded-2xl">
         <Image
           src={item.src}
           alt={`Founder ${index + 1}`}

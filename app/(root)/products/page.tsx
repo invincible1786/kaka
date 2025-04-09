@@ -39,7 +39,7 @@ const Page = () => {
   return (
     <div className="max-w-full overflow-x-hidden px-4 sm:px-6"> 
       <div className="text-xl sm:text-2xl lg:text-3xl xl:text-4xl font-extrabold text-black text-center p-4 sm:p-6 rounded-2xl shadow-lg tracking-wide uppercase mx-2 sm:mx-4 mb-4">
-        Here are the Products produced at our esteemed unit
+       The Products We Manufacture
       </div>
 
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-4 sm:gap-6 p-2 sm:p-6 mx-auto max-w-[2000px]">
