@@ -23,14 +23,13 @@ function ContactUs() {
     }, []);
 
     const validateForm = () => {
-        const newErrors = {};
+        const newErrors: Partial<FormData> = {};
         if (!form.name.trim()) newErrors.name = 'Name is required';
         if (!form.email.trim() || !/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(form.email)) newErrors.email = 'Valid email is required';
         if (!form.message.trim()) newErrors.message = 'Message is required';
         setErrors(newErrors);
         return Object.keys(newErrors).length === 0;
     };
-
     const handleChange = (e) => {
         setForm({ ...form, [e.target.name]: e.target.value });
     };
