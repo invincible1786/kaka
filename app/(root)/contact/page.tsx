@@ -1,7 +1,7 @@
 'use client';
 
 import { useState, useEffect } from 'react';
-import { useRouter } from 'next/router';
+
 import { motion } from 'framer-motion';
 
 function ContactUs() {
@@ -17,7 +17,7 @@ function ContactUs() {
     }, []);
 
     const validateForm = () => {
-        let newErrors = {};
+        const newErrors = {};
         if (!form.name.trim()) newErrors.name = 'Name is required';
         if (!form.email.trim() || !/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(form.email)) newErrors.email = 'Valid email is required';
         if (!form.message.trim()) newErrors.message = 'Message is required';
