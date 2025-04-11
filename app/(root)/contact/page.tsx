@@ -30,22 +30,22 @@ function ContactUs() {
         setErrors(newErrors);
         return Object.keys(newErrors).length === 0;
     };
-    const handleChange = (e) => {
+    const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
         setForm({ ...form, [e.target.name]: e.target.value });
     };
-
-    const handleSubmit = async (e) => {
+    
+    const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
         e.preventDefault();
         if (!validateForm()) return;
         setIsSubmitting(true);
-
+    
         const formData = new FormData();
         Object.entries(form).forEach(([key, value]) => formData.append(key, value));
-
+    
         try {
             const response = await fetch('https://getform.io/f/ayvkwkpb', {
                 method: 'POST',
-                body: formData
+                body: formData,
             });
             if (response.ok) {
                 setSuccess(true);
@@ -59,6 +59,7 @@ function ContactUs() {
             setIsSubmitting(false);
         }
     };
+    
 
     return (
         <div className="min-h-screen flex items-center justify-center bg-black text-white overflow-hidden relative py-2 sm:py-4 md:py-8 lg:py-16" style={{ fontFamily: 'Raleway, sans-serif' }}>
