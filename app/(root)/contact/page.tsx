@@ -1,16 +1,22 @@
 'use client';
 
 import { useState, useEffect } from 'react';
-
 import { motion } from 'framer-motion';
+import { useRouter } from 'next/navigation';
+
+type FormData = {
+  name: string;
+  email: string;
+  message: string;
+};
 
 function ContactUs() {
     const [isSubmitting, setIsSubmitting] = useState(false);
     const [animate, setAnimate] = useState(false);
-    const [form, setForm] = useState({ name: '', email: '', message: '' });
-    const [errors, setErrors] = useState({});
+    const [form, setForm] = useState<FormData>({ name: '', email: '', message: '' });
+    const [errors, setErrors] = useState<Partial<FormData>>({});
     const [success, setSuccess] = useState(false);
-
+    const router = useRouter(); // <-- required for router.push
 
     useEffect(() => {
         setTimeout(() => setAnimate(true), 300);
