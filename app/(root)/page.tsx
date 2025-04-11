@@ -1,6 +1,6 @@
 import React from 'react'
 import Image from 'next/image'
-
+import Carousel from './components/Carousel';
 
 const page = () => {
 
@@ -79,9 +79,12 @@ const page = () => {
     <h2 className="text-3xl font-bold text-gray-500 tracking-wide uppercase">Locations We Cater To</h2>
       </div>
     </div>
-    </div>
+   
 
-
+<main className="h-60 mt-5 flex items-center justify-center bg-gray-100">
+<Carousel />
+</main>
+</div>
   )
 }
 

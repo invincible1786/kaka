@@ -40,6 +40,7 @@ const layout = ({ children }: { children: React.ReactNode }) => {
                   <p className="text-sm sm:text-base hover:underline cursor-pointer">Contact Us</p>
                   <p className="text-sm sm:text-base">Email - kakar.fabricators@gmail.com</p>
                   <p className="text-sm sm:text-base">Contact - 9417436641</p>
+                  <p className="text-sm sm:text-base">Location - Plot no 29 Adjoining Focal point phase 7 Ludhiana</p>
                 </div>
               </div>
 
@@ -56,6 +57,7 @@ const layout = ({ children }: { children: React.ReactNode }) => {
                   <Link href="/contact">
                     <li className="text-sm sm:text-base hover:underline cursor-pointer">Contact Us</li>
                   </Link>
+                  
                 </ul>
               </div>
 
