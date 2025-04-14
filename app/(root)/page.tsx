@@ -47,7 +47,7 @@ const page = () => {
   <div className="mt-1 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 ">
     {[
       { src: "/FO2-removebg-preview (1).png", name: "Shri Malik Natha Ram Kakar" },
-      { src: "/FO2-removebg-preview (1).png", name: "Shri Kasturi Lal Kakar" },
+      { src: "/FO1-removebg-preview.png", name: "Shri Kasturi Lal Kakar" },
       { src: "/His World Missions.jpeg", name: "Mr Aman Kakar" },
     ].map((item, index) => (
       <div

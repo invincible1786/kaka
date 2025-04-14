@@ -58,8 +58,8 @@ const Page: React.FC = () => {
     { image: '/p9.jpg', name: 'Aluminium tiltable tower extension ladder', description: '' },
     { image: '/p10.jpg', name: 'Sky lift', description: '' },
     { image: '/p8.jpg', name: 'Mobile toilet', description: '' },
-    { image: '/p11.jpg', name: 'Truck fitted water tanker', description: '' },
-    { image: '/p12.jpg', name: 'Tractor operated shrub cutter', description: '' },
+    { image: '/P11.jpg', name: 'Truck fitted water tanker', description: '' },
+    { image: '/P12.jpg', name: 'Tractor operated shrub cutter', description: '' },
   ];
 
   return (
