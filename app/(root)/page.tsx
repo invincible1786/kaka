@@ -5,11 +5,11 @@ import Carousel from './components/Carousel';
 const page = () => {
 
   return (
-    <div className="container">
-      <div className="cover relative w-full">
+    <div className="w-full">
+      <div className="cover w-full">
   <div className="image w-full overflow-hidden relative">
     <Image
-      src="/pexels-pixabay-257643.jpg"
+      src="/home2.png"
       alt="Full Width Image"
       width={1600}
       height={800}
@@ -27,38 +27,38 @@ const page = () => {
   </div>
 </div>
 
-      <div className="abt max-w-2xl mx-auto p-6 mt-20 mb-10 ">
+      <div className="abt max-w-2xl mx-auto p-6 mt-20 ">
         <h2 className="text-3xl sm:text-4xl md:text-5xl font-semibold text-center text-gray-700 mb-4">About Us</h2>
-        <p className="text-lg sm:text-xl md:text-2xl text-gray-500 leading-relaxed text-center">
+        <p className="text-lg sm:text-xl md:text-xl text-gray-500 leading-relaxed text-center">
         At Kakar Fabricators, we forge excellence through unwavering commitment to hard work, superior quality, innovative solutions, and punctual delivery on every project.
         </p>
       </div>
 
-      <div className="flex m-auto justify-center items-center bg-gray-500 w-90 rounded-3xl p-3">
-    <p className="font-bold text-white text-xl">In Business since July - 1977</p>
+      <div className="flex m-auto justify-center items-center text-gray-500 w-90 rounded-3xl p-3">
+    <p className="font-bold text-xl">In Business since July - 1999</p>
 </div>
 
-      <div className="founders px-6 py-8 bg-white">
+      <div className="founders px-8 py-18 bg-white">
         <div className="text-center mb-8">
           <h3 className="text-4xl font-bold text-gray-500 tracking-wide uppercase">Founders</h3>
         </div>
   <div className="mt-1 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 ">
     {[
       { src: "/FO2-removebg-preview (1).png", name: "Shri Malik Natha Ram Kakar" },
-      { src: "/FO1-removebg-preview.png", name: "Shri Kasturi Lal Kakar" },
+      { src: "/FO2-removebg-preview (1).png", name: "Shri Kasturi Lal Kakar" },
       { src: "/His World Missions.jpeg", name: "Mr Aman Kakar" },
     ].map((item, index) => (
       <div
       key={index}
       className="relative flex flex-col items-center text-center transform transition duration-300 bg-white rounded-2xl overflow-hidden"
     >
-      <div className="w-full h-[400px] overflow-hidden rounded-2xl">
+      <div className="w-full h-[400px] overflow-hidden rounded-2xl flex items-center justify-center">
         <Image
           src={item.src}
           alt={`Founder ${index + 1}`}
-          width={400}
+          width={800}
           height={400}
-          className="w-full h-full object-cover"
+          className="w-full h-full object-cover object-center"
         />
       </div>
       
@@ -76,7 +76,7 @@ const page = () => {
       
 
       <div className="locations text-center py-8">
-    <h2 className="text-3xl font-bold text-gray-500 tracking-wide uppercase">Locations We Cater To</h2>
+    <h2 className="text-3xl font-bold text-gray-500 tracking-wide uppercase">Service Locations</h2>
       </div>
     </div>
    

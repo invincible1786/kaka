@@ -5,7 +5,7 @@ import Image from 'next/image';
 const layout = ({ children }: { children: React.ReactNode }) => {
   return (
     <div className="overflow-x-hidden">
-      <div className="fixed top-0 left-0 right-0 bg-black z-50 shadow-md">
+      <div className="fixed top-0 left-0 right-0 bg-white z-50 border-b border-gray-100">
         <div className="navbar flex items-center justify-between py-2 px-3 md:px-8">
           <div className="flex items-center mt-2">
             <Image 
@@ -13,12 +13,12 @@ const layout = ({ children }: { children: React.ReactNode }) => {
               alt="Logo" 
               width={100}
               height={50}
-              className="min-w-[100px] rounded-2l invert mr-10 " 
+              className="w-[100px] md:w-[100px] h-auto rounded-2l mr-4 md:mr-10" 
             />
           </div>
           
           <div className="flex items-center">
-            <ul className="flex items-center space-x-8 md:space-x-20 mr-4 md:mr-10 font-bold text-white text-sm sm:text-base lg:text-lg xl:text-l mt-3">
+            <ul className="flex items-center space-x-4 md:space-x-12 lg:space-x-20 mr-2 md:mr-10 font-bold text-black text-sm sm:text-base lg:text-lg xl:text-xl mt-3">
               <Link href="/"><li className="hover:text-blue-500">Home</li></Link>
               <Link href="/products"><li className="hover:text-blue-500">Products</li></Link>
               <Link href="/contact"><li className="hover:text-blue-500 ">Contact</li></Link>
@@ -26,7 +26,8 @@ const layout = ({ children }: { children: React.ReactNode }) => {
           </div>
         </div>
       </div>
-      <div className="mt-24">
+      
+      <div className="mt-20">
         <div className="bg-white">{children}</div>
 
         <footer className="bg-gray-800 text-white py-8 sm:py-12">

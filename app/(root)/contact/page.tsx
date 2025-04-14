@@ -139,7 +139,7 @@ function ContactUs() {
                         <textarea name="message" placeholder="Your Message" value={form.message} onChange={handleChange} className="w-full p-3 rounded bg-black text-white border-2 border-white transition duration-300 ease-out"></textarea>
                         {errors.message && <p className="text-red-500 text-sm">{errors.message}</p>}
                     </div>
-                    <button type="submit" className={`w-full p-3 rounded bg-white text-black border border-white transition-all duration-500 ease-out delay-300 ${animate ? 'translate-y-0 opacity-100' : 'translate-y-[100%] opacity-0'}`} disabled={isSubmitting || success}>
+                    <button type="submit" className={`w-full p-3 rounded-4xl bg-white text-black border border-white transition-all duration-500 ease-out delay-300 ${animate ? 'translate-y-0 opacity-100' : 'translate-y-[100%] opacity-0'}`} disabled={isSubmitting || success}>
                         {success ? 'Submitted' : (isSubmitting ? 'Sending...' : 'Send Message')}
                     </button>
                 </form>

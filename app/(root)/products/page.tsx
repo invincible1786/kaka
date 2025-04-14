@@ -28,12 +28,12 @@ const ProductCard: React.FC<ProductCardProps> = ({ image, name, description, ind
       }}
       viewport={{ once: true, margin: '-100px' }}
     >
-      <div className="relative h-60 sm:h-72 lg:h-80">
+      <div className="relative h-60 sm:h-72 lg:h-80 px-0 py-30">
         <Image
           src={image}
           alt={name}
           fill
-          className="object-cover"
+          className={`${name === 'Tractor operated shrub cutter' || name === 'Truck fitted water tanker' ? 'object-contain' : 'object-cover'}`}
           sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 25vw"
         />
       </div>
@@ -58,15 +58,17 @@ const Page: React.FC = () => {
     { image: '/p9.jpg', name: 'Aluminium tiltable tower extension ladder', description: '' },
     { image: '/p10.jpg', name: 'Sky lift', description: '' },
     { image: '/p8.jpg', name: 'Mobile toilet', description: '' },
+    { image: '/p11.jpg', name: 'Truck fitted water tanker', description: '' },
+    { image: '/p12.jpg', name: 'Tractor operated shrub cutter', description: '' },
   ];
 
   return (
-    <div className="max-w-full overflow-x-hidden px-4 sm:px-6 bg-gray-200">
-      <div className="text-xl sm:text-2xl lg:text-3xl xl:text-4xl font-bold text-gray-500 text-center p-4 sm:p-6 rounded-2xl shadow-lg tracking-wide uppercase mx-2 sm:mx-4 mb-4 bg-white">
+    <div className="min-h-screen w-full bg-gray-200">
+      <div className="text-xl sm:text-2xl lg:text-3xl xl:text-4xl font-bold text-gray-500 text-center p-4 sm:p-6 rounded-b-2xl shadow-lg tracking-wide uppercase bg-white">
         The Products We Manufacture
       </div>
 
-      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-4 sm:gap-6 p-2 sm:p-6 mx-auto max-w-[2000px] text-gray-500 bg-cover">
+      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-4 sm:gap-6 p-4 sm:p-8 mx-auto container">
         {products.map((product, index) => (
           <ProductCard key={index} {...product} index={index} />
         ))}
