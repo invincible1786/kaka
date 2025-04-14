@@ -27,18 +27,20 @@ const page = () => {
   </div>
 </div>
 
-      <div className="abt max-w-2xl mx-auto p-6 mt-20 ">
-        <h2 className="text-3xl sm:text-4xl md:text-5xl font-semibold text-center text-gray-700 mb-4">About Us</h2>
-        <p className="text-lg sm:text-xl md:text-xl text-gray-500 leading-relaxed text-center">
-        At Kakar Fabricators, we forge excellence through unwavering commitment to hard work, superior quality, innovative solutions, and punctual delivery on every project.
-        </p>
+      <div className="abt max-w-xl mx-auto p-6 mt-12 text-center">
+        <h2 className="text-3xl font-bold text-gray-700 mb-6">About Us</h2>
+        <div className="relative">
+          <p className="text-lg text-gray-600 leading-relaxed max-w-lg mx-auto">
+            At Kakar Fabricators, we forge excellence through unwavering commitment to hard work, superior quality, innovative solutions, and punctual delivery on every project.
+          </p>
+        </div>
       </div>
 
-      <div className="flex m-auto justify-center items-center text-gray-500 w-90 rounded-3xl p-3">
-    <p className="font-bold text-xl">In Business since July - 1999</p>
-</div>
+      <div className="text-center text-gray-600 font-semibold mb-8">
+        <span className=" border-gray-300 pb-1">In Business since July - 1999</span>
+      </div>
 
-      <div className="founders px-8 py-18 bg-white">
+      <div className="founders px-8 py-12 bg-white">
         <div className="text-center mb-8">
           <h3 className="text-4xl font-bold text-gray-500 tracking-wide uppercase">Founders</h3>
         </div>
