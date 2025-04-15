@@ -37,7 +37,7 @@ const page = () => {
       </div>
 
       <div className="text-center text-gray-600 font-semibold mb-8">
-        <span className=" border-gray-300 pb-1">In Business since July - 1999</span>
+        <span className=" border-gray-300 pb-1">In Business since July - 1997</span>
       </div>
 
       <div className="founders px-8 py-12 bg-white">

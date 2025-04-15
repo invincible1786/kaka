@@ -4,7 +4,7 @@ import Image from 'next/image';
 
 const layout = ({ children }: { children: React.ReactNode }) => {
   return (
-    <div className="overflow-x-hidden">
+    <div className="overflow-x-hidden cursor-grab">
       <div className="fixed top-0 left-0 right-0 bg-white z-50 border-b border-gray-100">
         <div className="navbar flex items-center justify-between py-2 px-3 md:px-8">
           <div className="flex items-center mt-2">
